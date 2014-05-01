@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#444"
+    android:padding="25dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.rosehulman.simplefsm_solution.MainActivity" >
+
+
+    <Button
+        android:id="@+id/reset_button"
+        style="@style/ColorButton.AbsoluteSizeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/red_button"
+        android:onClick="handleReset"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/blue_go_button"
+        style="@style/ColorButton.AbsoluteSizeButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue_button"
+        android:onClick="handleHitTarget"
+        android:text="Hit Target" />
+
+    <Button
+        android:id="@+id/go_or_mission_complete_button"
+        style="@style/ColorButton"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/green_button"
+        android:onClick="handleGo"
+        android:text="Go!"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/state_label"
+        style="@style/DisplayText"
+        android:layout_below="@id/reset_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Current state:" />
+
+    <TextView
+        android:id="@+id/current_state_textview"
+        style="@style/DisplayText"
+        android:layout_alignBaseline="@id/state_label"
+        android:layout_toRightOf="@id/reset_button"
+        android:text="---" />
+    
+    <TextView
+        android:id="@+id/state_time_label"
+        style="@style/DisplayText"
+        android:layout_below="@+id/state_label"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="State time:" />
+    
+    <TextView
+        android:id="@+id/state_time_textview"
+        style="@style/DisplayText"
+        android:layout_alignBaseline="@id/state_time_label"
+        android:layout_toRightOf="@id/reset_button"
+        android:text="---" />
+        
+</RelativeLayout>
