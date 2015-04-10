@@ -21,19 +21,20 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">#DDD</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">18sp</item>
     </style>
     <style name="ColorButton" parent="@android:style/Widget.Button">
         <item name="android:textColor">#DDD</item>
-        <item name="android:textSize">26sp</item>
+        <item name="android:textSize">18sp</item>
     </style>
     <style name="ColorButton.HorzLinearLayout">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">5dp</item>
     </style>
     <style name="ColorButton.AbsoluteSizeButton">
-        <item name="android:layout_width">240dp</item>
-        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">50dp</item>
     </style>
 </resources>
